@@ -12,7 +12,7 @@ func main()  {
 	var bb []byte
 	m:= make(map[string]int64,1e6)
 
-	for i:=int64(math.MaxInt32);i<2e6+math.MaxInt32;i++ {
+	for i:=int64(math.MaxInt32);i<1e6+math.MaxInt32;i++ {
 		value := time.Now().Unix()
 		bb:=bb[:0]
 		bb = AppendInt(bb,i)
@@ -46,4 +46,7 @@ func AppendInt(dst []byte,n int64) []byte  {
 /**
 * 350.0016ms
 * 1,3828,9792 B
+*
+* 1.0810163s
+* 342131952 B
 */

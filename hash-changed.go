@@ -15,7 +15,7 @@ func main()  {
 
 	buf := make([]byte, binary.MaxVarintLen64)
 
-	for i:=int64(math.MaxInt32);i<3e6+math.MaxInt32;i++ {
+	for i:=int64(math.MaxInt32);i<1e6+math.MaxInt32;i++ {
 
 		n := binary.PutVarint(buf, i)
 		bn := buf[:n]

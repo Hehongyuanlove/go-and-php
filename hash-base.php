@@ -1,7 +1,7 @@
 <?php
 $t1 = microtime(true);
 $arr = array();
-for($i = 2147483647;$i<2150483647;$i++){
+for($i = 2147483647;$i<2148483647;$i++){
     $value = time();
     $key = $i.'_'.$value;
     $arr[$key] = $value;
